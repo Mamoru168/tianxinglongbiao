@@ -39,6 +39,28 @@
             align-items: center;
             background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
         }
+        #catalog-container {
+    position: relative;
+    width: 80%;
+    height: auto;
+    background-image: url("3.png的链接");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#catalog-image {
+    display: none;
+}
+
+#catalog-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #333;
+}
     </style>
 </head>
 <body>
@@ -48,19 +70,17 @@
     </h1>
 
     <div id="content">
-        <div id="catalog-container">
-            <img src="https://raw.githubusercontent.com/Mamoru168/tianxinglongbiao/main/3.png" alt="目录章节" id="catalog-image">
-            <div id="catalog-content">
-                <div>
-                    <p>点击下面的章节阅读：</p>
-                    <ul>
-                        <li><a href="chapter1.html">第一章：筛选镖师之日</a></li>
-                        <li><a href="chapter2.html">第二章：筛选镖师之日（下）</a></li>
-                        <li><a href="chapter3.html">第三章：开启镖师之路</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div id="catalog-container">
+        <img src="3.png的链接" alt="目录章节" id="catalog-image">
+        <div id="catalog-content">
+            <p>点击下面的章节阅读：</p>
+            <ul>
+                <li><a href="chapter1.html">第一章：筛选镖师之日</a></li>
+                <li><a href="chapter2.html">第二章：筛选镖师之日（下）</a></li>
+                <li><a href="chapter3.html">第三章：开启镖师之路</a></li>
+            </ul>
         </div>
     </div>
+</div>
 </body>
 </html>
