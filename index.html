@@ -6,9 +6,9 @@
     <title>世界小说</title>
     <style>
         body {
-            background-image: url("https://raw.githubusercontent.com/Mamoru168/tianxinglongbiao/main/3.png");
-            background-size: cover;
-            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
         #banner {
             width: 100%;
@@ -19,30 +19,25 @@
             margin-top: 20px;
         }
         #content {
+            position: relative;
             width: 80%;
             margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            position: relative;
-        }
-        #catalog-container {
-            position: relative;
         }
         #catalog-image {
-            max-width: 100%;
+            width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
         }
         #catalog-content {
             position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80%;
-            padding: 20px;
-            z-index: 1; /* 确保内容在图片之上 */
-            background: rgba(255, 255, 255, 0.8); /* 半透明背景，以免内容影响到底图 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
         }
     </style>
 </head>
@@ -56,12 +51,14 @@
         <div id="catalog-container">
             <img src="https://raw.githubusercontent.com/Mamoru168/tianxinglongbiao/main/3.png" alt="目录章节" id="catalog-image">
             <div id="catalog-content">
-                <p>点击下面的章节阅读：</p>
-                <ul>
-                    <li><a href="chapter1.html">第一章：筛选镖师之日</a></li>
-                    <li><a href="chapter2.html">第二章：筛选镖师之日（下）</a></li>
-                    <li><a href="chapter3.html">第三章：开启镖师之路</a></li>
-                </ul>
+                <div>
+                    <p>点击下面的章节阅读：</p>
+                    <ul>
+                        <li><a href="chapter1.html">第一章：筛选镖师之日</a></li>
+                        <li><a href="chapter2.html">第二章：筛选镖师之日（下）</a></li>
+                        <li><a href="chapter3.html">第三章：开启镖师之路</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
