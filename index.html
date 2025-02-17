@@ -6,7 +6,7 @@
     <title>世界小说</title>
     <style>
         body {
-            background-image: url("https://raw.githubusercontent.com/Mamoru168/tianxinglongbiao/main/3.png"); /* 修改为正确的背景图片链接 */
+            background-image: url("https://raw.githubusercontent.com/Mamoru168/tianxinglongbiao/main/3.png");
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -23,15 +23,25 @@
             margin: 20px auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8);
+            position: relative;
         }
-        #catalog {
-            margin-top: 20px;
+        #catalog-container {
+            position: relative;
         }
-        #catalog img {
+        #catalog-image {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
+        }
+        #catalog-content {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
         }
     </style>
 </head>
